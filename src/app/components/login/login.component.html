@@ -1,0 +1,38 @@
+
+  <div class="wrapper">
+    <div class="card-switch">
+        <label class="switch">
+           <input type="checkbox" class="toggle">
+           <span class="slider"></span>
+           <span class="card-side"></span>
+           <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <div class="title">FUNCIONARIO</div>
+              <form class="flip-card__form" action="">
+                <input [(ngModel)]="usuarioFuncionario" class="flip-card__input" name="usuarioFuncionario"  placeholder="Usuário" type="text">
+                <input [(ngModel)]="senhaFuncionario" class="flip-card__input" name="senhaFuncionario" name="Senha" placeholder="Senha" type="password">
+                <button class="flip-card__btn" (click)="Login()">Entrar</button>
+              </form>
+            </div>
+            <div class="flip-card__back">
+              <div class="title">GERENTE</div>
+              <form class="flip-card__form" action="">
+                <input [(ngModel)]="usuarioGerente" class="flip-card__input" placeholder="Usuário" name="usuarioGerente">
+                <input [(ngModel)]="senhaGerente" class="flip-card__input" name="senhaGerente" placeholder="Password" type="password">
+                <button class="flip-card__btn" (click)="LoginGerente()" >Entrar</button>
+              </form>
+            </div>
+
+
+           </div>
+        </label>
+    </div>
+  </div>
+
+
+
+
+
+
+
+

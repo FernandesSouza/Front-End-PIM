@@ -1,0 +1,73 @@
+
+<nav>
+  <div class="logo">
+    <h1>SargitarioRH</h1>
+    <p>Funcionario</p>
+  </div>
+  <ul class="menu">
+    <li>
+      <a routerLink="/holerite" id="links">Holerite</a>
+    </li>
+    <li>
+      <a routerLink="/" id="links">Sair do sistema</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+<main>
+
+<h1>CONSULTA DE HOLERITES</h1>
+
+<div class="inputs">
+  <input type="search" [(ngModel)]="data"  name="data" id="" placeholder="ANO/MÊS/DIA">
+  <button (click)="ObterHoleriteUnico()">PESQUISAR</button>
+</div>
+
+
+
+  <div class="container">
+
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Empresa</th>
+          <th>Cpf</th>
+          <th>Matrícula do Funcionário</th>
+          <th>Data de Pagamento</th>
+          <th>Valor</th>
+          <th>Nome</th>
+          <th>Função</th>
+          <th>Setor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="holerite$ | async as holerite">
+          <td>{{ holerite.id }}</td>
+          <td>{{ holerite.idempresa }}</td>
+          <td>{{ holerite.cpf }}</td>
+          <td>{{ holerite.matfuncionario }}</td>
+          <td>{{ holerite.datapgto | date:'yy/MM/dd' }}</td>
+          <td>{{ holerite.valor | currency:'BRL' }}</td>
+          <td>{{ holerite.nome }}</td>
+          <td>{{ holerite.funcao }}</td>
+          <td>{{ holerite.setor }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+
+
+
+</main>
+
+
+
+
