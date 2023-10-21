@@ -1,3 +1,4 @@
+
 <nav>
   <div class="logo">
     <h1>SargitarioRH</h1>
@@ -16,9 +17,140 @@
     <li>
       <a routerLink="/" id="links">Sair do sistema</a>
     </li>
-
   </ul>
 </nav>
-<main>
 
+  <h1 id="titulo">Cadastro de Novos Funcionários</h1>
+  <p id="titulo">Siga as instruções para a admissão do novo funcionário.</p>
+
+<main>
+  <form>
+      <fieldset>
+          <legend>Informações Pessoais</legend>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="nome">Nome:</label>
+                  <input [(ngModel)]="nomeAdicionar" type="text" id="nome" name="nome" required>
+              </div>
+              <div class="form-group">
+                  <label for="cpf">CPF:</label>
+                  <input [(ngModel)]="cpfAdicionar" type="text" id="cpf" name="cpf" required>
+              </div>
+              <div class="form-group">
+                  <label for="rg">RG:</label>
+                  <input [(ngModel)]="rgAdicionar" type="text" id="rg" name="rg" required>
+              </div>
+              <div class="form-group">
+                  <label for="pis">PIS:</label>
+                  <input [(ngModel)]="pisAdicionar" type="text" id="pis" name="pis" required>
+              </div>
+              <div class="form-group">
+                  <label for="cep">CEP:</label>
+                  <input [(ngModel)]="cepAdicionar" type="text" id="cep" name="cep" required>
+              </div>
+              <div class="form-group">
+                <label for="cep">Usuário:</label>
+                <input [(ngModel)]="usuarioAdicionar" type="text" id="cep" name="usuarioAdicionar" required>
+              </div>
+              <div class="form-group">
+                <label for="cep">Senha:</label>
+                <input [(ngModel)]="senhaAdicionar" type="text" id="cep" name="senhaAdicionar" required>
+              </div>
+          </div>
+      </fieldset>
+
+  <!-- Informações de Contato -->
+  <fieldset>
+      <legend>Informações de Contato</legend>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input [(ngModel)]="emailAdicionar" type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input [(ngModel)]="telefoneAdicionar" type="tel" id="telefone" name="telefone" required>
+          </div>
+      </div>
+  </fieldset>
+
+  <!-- Informações do Cargo -->
+  <fieldset>
+      <legend>Informações do Cargo</legend>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="dataAdmissao">Data de admissão:</label>
+              <input  [(ngModel)]="dataAdmissao" type="text" id="dataAdmissao" name="dataAdmissao" required>
+          </div>
+          <div class="form-group">
+              <label for="setor">Empresa:</label>
+              <input [(ngModel)]="idempresaAdicionar" type="text" id="empresa" name="empresa" required>
+          </div>
+          <div class="form-group">
+              <label for="setor">Setor:</label>
+              <input [(ngModel)]="setorAdicionar" type="text" id="setor" name="setor" required>
+          </div>
+          <div class="form-group">
+              <label for="funcao">Função:</label>
+              <input [(ngModel)]="funcaoAdicionar" type="text" id="funcao" name="funcao" required>
+          </div>
+          <div class="form-group">
+              <label for="jornadaTrabalho">Jornada de trabalho:</label>
+              <input [(ngModel)]="jornadaAdicionar" type="number" id="jornadaTrabalho" name="jornadaTrabalho" required>
+          </div>
+      </div>
+  </fieldset>
+
+  <!-- Informações de Benefício -->
+  <fieldset>
+      <legend>Informações de Benefício</legend>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="salarioBase">Salário base:</label>
+              <input [(ngModel)]="salarioAdicionar" type="number" id="salarioBase" name="salarioBase" required>
+          </div>
+
+          <div class="form-group radio-options">
+              <label for="porcentagemInsalubridade">Porcentagem para Insalubridade:</label>
+              <input [(ngModel)]="insalubridadeAdicionar" type="text" name="insalubridadeAdicionar" id="">
+
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group radio-options">
+              <label>Adicional periculosidade:</label>
+              <input [(ngModel)]="periculosidadeAdicionar" type="text" name="periculosidadeAdicionar" id="">
+          </div>
+          <div class="form-group radio-options">
+              <label>Vale transporte:</label>
+              <input [(ngModel)]="transporteAdicionar" type="text" name="transporteAdicionar">
+          </div>
+          <div class="form-group">
+              <label for="numeroFilhos">Número de filhos:</label>
+              <input type="number" id="numeroFilhos" name="numeroFilhos">
+          </div>
+      </div>
+  </fieldset>
+
+
+  <!-- Informações de Desconto -->
+  <fieldset>
+      <legend>Informações de Desconto</legend>
+      <div class="form-row">
+          <div class="form-group">
+              <label>Vale Refeição:</label>
+              <input [(ngModel)]="valerefeicaoAdicionar" type="number"  name="valerefeicaoAdicionar" id="">
+          </div>
+          <div class="form-group">
+              <label>Plano de Saúde:</label>
+              <input [(ngModel)]="plsaudeAdicionar" type="number" name="plsaudeAdicionar" id="">
+          </div>
+      </div>
+  </fieldset>
+      <button type="reset">Limpar dados</button>
+      <button (click)=" CadastrarFuncionario()" type="submit">Cadastrar</button>
+
+  </form>
 </main>
+
+

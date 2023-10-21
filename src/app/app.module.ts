@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
+
+
 
 
 import { AppComponent } from './app.component';
@@ -31,14 +34,14 @@ import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/
     JwtModule.forRoot({
       config: {
         tokenGetter: () => {
-          return localStorage.getItem('token'); 
+          return localStorage.getItem('token');
         }
       }
     })
 
 
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

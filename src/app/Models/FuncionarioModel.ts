@@ -1,9 +1,8 @@
-export interface Funcionario{
+export interface FuncionarioModel{
 
   matricula: number;
   idempresa?: number | null;
   usuario?: string | null;
-  dtadmissao: Date;
   rg?: string | null;
   email?: string | null;
   jornada?: number | null;
@@ -22,6 +21,7 @@ export interface Funcionario{
   valetransp?: number | null;
   senha?: string | null;
   setor?: string | null;
+  dataAdmissao: Date;
 
 
 

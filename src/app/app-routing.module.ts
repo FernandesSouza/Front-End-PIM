@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'holerite', component: HoleriteComponent},
   {path: 'menu-gerente', component: MenuGerenteComponent},
   {path: 'cadastro-funcionario', component: CadastroFuncionarioComponent}
-
+  
 
 ]
 
