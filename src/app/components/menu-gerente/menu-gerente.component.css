@@ -1,3 +1,5 @@
+@import url('../global_css/global.css');
+
 /* Reset de Estilos Padrão */
 * {
   margin: 0;
@@ -10,59 +12,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #cccccc;
 }
-
-nav {
-
-  color: #fff;
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-
-
-  background: #b1b0b0;
-  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.103);
-
-}
-
-.logo {
-  background-color: #222;
-  padding: 20px;
-  text-align: center;
-}
-
-.logo h1 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.menu {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 50px;
-}
-
-.menu > li {
-  padding: 10px 10px;
-  transition: background-color 0.3s ease; /* Adicione uma transição para a cor de fundo */
-  cursor: pointer;
-}
-
-.menu > li:hover {
-  background-color: #444;
-}
-
-.submenu {
-  list-style-type: none;
-  display: none;
-  padding-left: 20px;
-  max-height: 0;
-  overflow: hidden;
-  transform-origin: top center; /* Define o ponto de origem da animação */
-}
-
 
 
 /* Conteúdo Principal */
@@ -77,9 +26,6 @@ main > div > img{
  justify-content: center;
  align-items: center;
  margin: auto;
-
-
-
 
 }
 

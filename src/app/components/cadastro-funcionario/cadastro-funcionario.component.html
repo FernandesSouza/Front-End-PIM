@@ -1,24 +1,53 @@
-<nav>
-  <div class="logo">
-    <h1>SargitarioRH</h1>
-    <p>Gerente</p>
+<nav class="menu-mobile">
+  <div id="bnt-menu-ham">
+    <i class="bi bi-list" ></i>
   </div>
-  <ul class="menu">
-    <li>
-      <a routerLink="/cadastro-funcionario" id="links">Cadastro de Funcionarios</a>
-    </li>
-    <li>
-      <a routerLink="/menu-gerente" id="links">Menu Principal</a>
-    </li>
-    <li>
-      <a routerLink="" id="links">Folha Setor</a>
-    </li>
-    <li>
-      <a routerLink="/" id="links">Sair do sistema</a>
-    </li>
+</nav>
 
+<nav class="menu-lateral" [class.menuClass]="menuLateral">
+  <div id="bnt-menu-fechar">
+    <i class="bi bi-x-lg"></i>
+  </div>
+
+  <div class="logo">
+    <img [src]="imagePath" alt="Minha Imagem">
+  </div>
+
+  <ul>
+    <li class="item-menu">
+      <a routerLink="/menu-gerente" id="links">
+        <span class="icon"><i class="bi bi-house-door-fill"></i></span>
+        <span class="txt-link">Home</span></a>
+    </li>
+    <li class="item-menu">
+      <a routerLink="/cadastro-funcionario" id="links">
+        <span class="icon"><i class="bi bi-person-fill-add"></i></span>
+        <span class="txt-link">Cadastro de Funcionários</span></a>
+    </li>
+    <li class="item-menu">
+      <a routerLink="" id="links">
+        <span class="icon"><i class="bi bi-people-fill"></i></span>
+        <span class="txt-link">Consultar Funcionários</span></a>
+    </li>
+    <li class="item-menu">
+      <a routerLink="" id="links">
+        <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+        <span class="txt-link">Folha de Pagamento</span></a>
+    </li>
+    <li class="item-menu">
+      <a routerLink="" id="links">
+        <span class="icon"><i class="bi bi-bar-chart-fill"></i></span>
+        <span class="txt-link">Dashboard</span></a>
+    </li>
+    <li class="item-menu">
+      <a routerLink="/" id="links">
+        <span class="icon"><i class="bi bi-backspace-fill"></i></span>
+        <span class="txt-link">Sair</span></a>
+    </li>
   </ul>
 </nav>
 <main>
+
+
 
 </main>

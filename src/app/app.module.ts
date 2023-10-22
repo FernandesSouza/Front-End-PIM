@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 import { AppComponent } from './app.component';
@@ -13,6 +15,7 @@ import { HoleriteComponent } from './components/holerite/holerite.component';
 import { JwtModule } from '@auth0/angular-jwt';
 import { MenuGerenteComponent } from './components/menu-gerente/menu-gerente.component';
 import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/cadastro-funcionario.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,12 @@ import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/
     HoleriteComponent,
     MenuGerenteComponent,
     CadastroFuncionarioComponent,
+    
 
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule,  CommonModule,
-    FormsModule,
+    FormsModule,MatSidenavModule,
 
     JwtModule.forRoot({
       config: {
@@ -34,7 +38,8 @@ import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/
           return localStorage.getItem('token'); 
         }
       }
-    })
+    }),
+      BrowserAnimationsModule
 
 
   ],

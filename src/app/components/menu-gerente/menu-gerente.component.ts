@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class MenuGerenteComponent {
 
-  imagePath = 'assets/imagens/h_3.png';
+  imagePath = 'assets/imagens/h_3.svg';
 
 }
