@@ -7,6 +7,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -35,7 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule,  CommonModule,
     FormsModule,MatSidenavModule, MatToolbarModule, MatDividerModule, MatButtonModule,
-    MatIconModule,
+    MatIconModule, MatFormFieldModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: () => {

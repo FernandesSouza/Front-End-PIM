@@ -3,7 +3,7 @@
 
 mat-toolbar{
     background-color: rgb(211, 211, 211);
-    color: rgb(31, 31, 31);
+    color:rgb(50, 50, 50);
 }
 
 mat-sidenav{
@@ -27,8 +27,7 @@ mat-sidenav-container{
 
 mat-sidenav-content{
     margin:16px;
-    display: flex;
-    height: calc(100vh - 98px);
+    height: 100%;
 
 }
 .toolbar-menu-btn{
