@@ -1,53 +1,58 @@
-<nav class="menu-mobile">
-  <div id="bnt-menu-ham">
-    <i class="bi bi-list" ></i>
-  </div>
-</nav>
 
-<nav class="menu-lateral" [class.menuClass]="menuLateral">
-  <div id="bnt-menu-fechar">
-    <i class="bi bi-x-lg"></i>
-  </div>
+<mat-sidenav-container> 
 
-  <div class="logo">
-    <img [src]="imagePath" alt="Minha Imagem">
-  </div>
+    <mat-sidenav #sidenav="matSidenav">
 
-  <ul>
-    <li class="item-menu">
-      <a routerLink="/menu-gerente" id="links">
-        <span class="icon"><i class="bi bi-house-door-fill"></i></span>
-        <span class="txt-link">Home</span></a>
-    </li>
-    <li class="item-menu">
-      <a routerLink="/cadastro-funcionario" id="links">
-        <span class="icon"><i class="bi bi-person-fill-add"></i></span>
-        <span class="txt-link">Cadastro de Funcionários</span></a>
-    </li>
-    <li class="item-menu">
-      <a routerLink="" id="links">
-        <span class="icon"><i class="bi bi-people-fill"></i></span>
-        <span class="txt-link">Consultar Funcionários</span></a>
-    </li>
-    <li class="item-menu">
-      <a routerLink="" id="links">
-        <span class="icon"><i class="bi bi-currency-dollar"></i></span>
-        <span class="txt-link">Folha de Pagamento</span></a>
-    </li>
-    <li class="item-menu">
-      <a routerLink="" id="links">
-        <span class="icon"><i class="bi bi-bar-chart-fill"></i></span>
-        <span class="txt-link">Dashboard</span></a>
-    </li>
-    <li class="item-menu">
-      <a routerLink="/" id="links">
-        <span class="icon"><i class="bi bi-backspace-fill"></i></span>
-        <span class="txt-link">Sair</span></a>
-    </li>
-  </ul>
-</nav>
-<main>
+        <button class="sidenav-menu-btn" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <span *ngIf="sidenav.opened" class="icon"><i class="bi bi-x-lg"></i></span>
+        </button>
+        <span>
+            <img class="logo" [src]="imagePath" alt="Minha Imagem">
+            <p>Gerente</p>
+        </span>
+
+        <button class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-house-door-fill"></i></span>
+            <span class="txt-link">Home</span>
+        </button>
+
+        <button class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-person-fill-add"></i></span>
+            <span class="txt-link">Cadastro de Funcionários</span>
+        </button>
+
+        <button class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-people-fill"></i></span>
+            <span class="txt-link">Consultar Funcionários</span>
+        </button>
+
+        <button class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-currency-dollar"></i></span>
+            <span class="txt-link">Folha de Pagamento</span>
+        </button>
+
+        <button class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-bar-chart-fill"></i></span>
+            <span class="txt-link">Dashboard</span>
+        </button>
+
+        <button class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-backspace-fill"></i></span>
+            <span class="txt-link">Sair</span>
+        </button>
 
 
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <nav>
+            <button class="toolbar-menu-btn" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+                <span *ngIf="!sidenav.opened" class="icon"><i class="bi bi-list"></i></span>
+            </button>
+        </nav>
+        <main>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi sequi a eveniet facilis, error id modi
+            eos dolor itaque? Eius perferendis aliquam corrupti atque expedita nam distinctio dolore, eaque repellendus?
 
-</main>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>

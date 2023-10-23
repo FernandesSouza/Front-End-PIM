@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -30,8 +34,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule,  CommonModule,
-    FormsModule,MatSidenavModule,
-
+    FormsModule,MatSidenavModule, MatToolbarModule, MatDividerModule, MatButtonModule,
+    MatIconModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: () => {

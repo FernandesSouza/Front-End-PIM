@@ -87,22 +87,6 @@ nav.menu-lateral:hover{
 }
 
 
-.logo {
-  padding: 20px;
-  text-align: center;
-}
-
-.logo h1 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.logo p{
-
-  line-height: 2rem;
-
-}
-
 ul{
   list-style-type: none;
   height: 100%;
