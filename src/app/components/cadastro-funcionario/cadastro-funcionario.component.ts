@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild  } from '@angular/core';
 import { FuncionarioModel } from 'src/app/Models/FuncionarioModel';
 import { CadastroService } from 'src/app/service/cadastroService';
 import { DatePipe } from '@angular/common';
+import {BreakpointObserver} from '@angular/cdk/layout';
+import { MatSidenav } from '@angular/material/sidenav';
 
 
 @Component({
@@ -12,7 +14,24 @@ import { DatePipe } from '@angular/common';
 export class CadastroFuncionarioComponent implements OnInit {
 
 
-  constructor(private cadastroService: CadastroService, private datePipe: DatePipe) {}
+  @ViewChild(MatSidenav) sidenav!: MatSidenav;
+
+
+  ngAfterViewInit(){
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+      if(res.matches){
+        this.sidenav.mode = 'over';
+        this.sidenav.close();
+      }else{
+        this.sidenav.mode = 'side';
+        this.sidenav.open();
+      }
+    })
+  }
+
+  imagePath = 'assets/imagens/logo_sargitariorh_preto.svg';
+
+  constructor(private cadastroService: CadastroService, private datePipe: DatePipe, private observer: BreakpointObserver) {}
 
 matriculaAdicionar = 0;
 idempresaAdicionar = null;

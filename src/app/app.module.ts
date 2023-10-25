@@ -2,6 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
+
 import { DatePipe } from '@angular/common';
 
 
@@ -16,6 +25,7 @@ import { HoleriteComponent } from './components/holerite/holerite.component';
 import { JwtModule } from '@auth0/angular-jwt';
 import { MenuGerenteComponent } from './components/menu-gerente/menu-gerente.component';
 import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/cadastro-funcionario.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +39,9 @@ import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule,  CommonModule,
-    FormsModule,
+    FormsModule,MatSidenavModule, MatToolbarModule, MatDividerModule, MatButtonModule,
+    MatIconModule, MatFormFieldModule,
+
 
     JwtModule.forRoot({
       config: {
@@ -37,7 +49,8 @@ import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/
           return localStorage.getItem('token');
         }
       }
-    })
+    }),
+      BrowserAnimationsModule
 
 
   ],
