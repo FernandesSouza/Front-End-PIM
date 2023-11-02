@@ -8,7 +8,7 @@
           <p>Gerente</p>
       </span>
 
-      <button class="sidenav-menu-btn">
+      <button routerLink="/menu-gerente" lass="sidenav-menu-btn">
           <span class="icon"><i class="bi bi-house-door-fill"></i></span>
           <span class="txt-link">Home</span>
       </button>
@@ -40,37 +40,33 @@
           </button>
       </nav>
       <main>
-
           <h1>Cadastro de Novos Funcionários</h1>
           <p>Siga as instruções para a admissão do novo funcionário.</p>
-
           <form>
               <fieldset>
                   <legend>Informações Pessoais</legend>
                   <div class="form-row">
                           <div class="form-group">
                               <label for="nome">Nome completo:</label>
-                              <input type="text" id="nome" name="nome" required>
+                              <input [(ngModel)]="nomeAdicionar" type="text" id="nome" name="nomeAdicionar" required>
                           </div>
                           <div class="form-group">
                               <label for="cpf">CPF:</label>
-                              <input type="text" id="cpf" name="cpf" required>
+                              <input [(ngModel)]="cpfAdicionar" type="text" id="cpf" name="cpfAdicionar" required>
                           </div>
                           <div class="form-group">
                               <label for="rg">RG:</label>
-                              <input type="text" id="rg" name="rg" required>
+                              <input [(ngModel)]="rgAdicionar" type="text" id="rg" name="rgAdicionar" required placeholder="XX.XXX.XXX-X">
                           </div>
 
                           <div class="form-group">
                               <label for="pis">PIS:</label>
-                              <input type="text" id="pis" name="pis" required>
+                              <input [(ngModel)]="pisAdicionar" type="text" id="pis" name="pisAdicionar" required>
                           </div>
                           <div class="form-group">
                               <label for="cep">CEP:</label>
-                              <input type="text" id="cep" name="cep" required>
+                              <input [(ngModel)]="cepAdicionar" type="text" id="cep" name="cepAdicionar" required>
                           </div>
-
-
                   </div>
               </fieldset>
 
@@ -80,11 +76,11 @@
               <div class="form-row">
                   <div class="form-group">
                       <label for="email">Email:</label>
-                      <input type="email" id="email" name="email" required>
+                      <input [(ngModel)]="emailAdicionar" type="email" id="email" name="emailAdicionar" required placeholder="email@gmail.com">
                   </div>
                   <div class="form-group">
                       <label for="telefone">Telefone:</label>
-                      <input type="tel" id="telefone" name="telefone" required>
+                      <input [(ngModel)]="telefoneAdicionar" type="tel" id="telefone" name="telefoneAdicionar" required>
                   </div>
               </div>
           </fieldset>
@@ -95,27 +91,23 @@
               <div class="form-row">
                   <div class="form-group">
                       <label for="dataAdmissao">Admissão:</label>
-                      <input type="date" id="dataAdmissao" name="dataAdmissao" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="dataTermino">Término:</label>
-                      <input type="date" id="dataTermino" name="dataTermino">
+                      <input [(ngModel)]="dataAdmissao" type="text" id="dataAdmissao" name="dataAdmissao" required placeholder="2023-09-13">
                   </div>
                   <div class="form-group">
                       <label for="setor">Empresa:</label>
-                      <input type="text" id="empresa" name="empresa" required>
+                      <input [(ngModel)]="idempresaAdicionar" type="text" id="empresa" name="idempresaAdicionar" required placeholder="3">
                   </div>
                   <div class="form-group">
                       <label for="setor">Setor:</label>
-                      <input type="text" id="setor" name="setor" required>
+                      <input [(ngModel)]="setorAdicionar" type="text" id="setor" name="setorAdicionar" required placeholder="TI">
                   </div>
                   <div class="form-group">
                       <label for="funcao">Função:</label>
-                      <input type="text" id="funcao" name="funcao" required>
+                      <input [(ngModel)]="funcaoAdicionar" type="text" id="funcao" name="funcaoAdicionar" required placeholder="Desenvolvedor">
                   </div>
                   <div class="form-group">
                       <label for="jornadaTrabalho">Jornada:</label>
-                      <input type="number" id="jornadaTrabalho" name="jornadaTrabalho" required>
+                      <input [(ngModel)]="jornadaAdicionar" type="number" id="jornadaTrabalho" name="jornadaAdicionar" required placeholder="220">
                   </div>
               </div>
           </fieldset>
@@ -126,137 +118,47 @@
               <div class="form-row">
                   <div class="form-group">
                       <label for="salarioBase">Salário Base:</label>
-                      <input type="number" id="salarioBase" name="salarioBase" required>
+                      <input [(ngModel)]="salarioAdicionar" type="number" id="salarioBase" name="salarioAdicionar" required placeholder="2300">
                   </div>
                   <div class="form-group radio-options">
-                      <label>Adicional insalubridade:</label>
-                      <label for="adicionalSim">
-                          Sim
-                          <input type="radio" id="adicionalSim" name="adicionalInsalubridade" value="Sim">
-                      </label>
-                      <label for="adicionalNao">
-                          Não
-                          <input type="radio" id="adicionalNao" name="adicionalInsalubridade" value="Não">
-                      </label>
-
-                  </div>
-                  <div class="form-group radio-options">
-
                       <label for="porcentagemInsalubridade">
                           Porcentagem para Insalubridade:
-
-                      </label>
-
-                      <label for="porcentagem10">
-                          10%
-                          <input type="radio" id="porcentagem10" name="porcentagemInsalubridade" value="10%">
-                      </label>
-
-                      <label for="porcentagem20">
-                          20%
-                          <input type="radio" id="porcentagem20" name="porcentagemInsalubridade" value="20%">
-                      </label>
-
-                      <label for="porcentagem40">
-                          40%
-                          <input type="radio" id="porcentagem40" name="porcentagemInsalubridade" value="40%">
+                        <input [(ngModel)]="insalubridadeAdicionar" type="number" name="insalubridadeAdicionar" id="" placeholder="0.10">
                       </label>
                   </div>
               </div>
               <div class="form-row">
                   <div class="form-group radio-options">
-                      <label>Adicional periculosidade:</label>
-                      <label for="periculosidadeSim">
-                          Sim
-                          <input type="radio" id="periculosidadeSim" name="periculosidade" value="Sim">
+                      <label>Adicional periculosidade:
+                        <input [(ngModel)]="periculosidadeAdicionar" type="number" name="periculosidadeAdicionar" id="" placeholder="0.10">
                       </label>
-
-                      <label for="periculosidadeNao">
-                          Não
-                          <input type="radio" id="periculosidadeNao" name="periculosidade" value="Não">
-                      </label>
-
-                  </div>
-                  <div class="form-group radio-options">
-                      <label>Vale transporte:</label>
-                      <label for="valeTransporteSim">
-                          Sim
-                          <input type="radio" id="valeTransporteSim" name="valeTransporte" value="Sim">
-                      </label>
-
-                      <label for="valeTransporteNao">
-                          Não
-                          <input type="radio" id="valeTransporteNao" name="valeTransporte" value="Não">
-                      </label>
-
                   </div>
                   <div class="form-group">
                       <label for="numeroFilhos">Número de filhos:</label>
-                      <input type="number" id="numeroFilhos" name="numeroFilhos">
+                      <input [(ngModel)]="dependenteAdicionar" type="number" id="numeroFilhos" name="dependentesAdicionar">
+                  </div>
+                  <div class="form-group">
+                    <label>Vale Refeição:
+                      <input [(ngModel)]="valerefeicaoAdicionar" type="number" name="valerefeicaoAdicionar" id="" placeholder="0.10">
+                    </label>
                   </div>
               </div>
           </fieldset>
-
-
-          <!-- Informações de Desconto -->
           <fieldset>
-              <legend>Informações de Desconto</legend>
-              <div class="form-row">
-                  <div class="form-group">
-                      <label>Vale Refeição:</label>
-                      <label for="valeRefeicaoSim">
-                          Sim
-                          <input type="radio" id="valeRefeicaoSim" name="valeRefeicao" value="Sim" required>
-                      </label>
-
-                      <label for="valeRefeicaoNao">
-                          Não
-                          <input type="radio" id="valeRefeicaoNao" name="valeRefeicao" value="Não" required>
-                      </label>
-
-                  </div>
-                  <div class="form-group">
-                      <label>Plano de Saúde:</label>
-                      <label for="planoSaudeSim">
-                          Sim
-                          <input type="radio" id="planoSaudeSim" name="planoSaude" value="Sim" required>
-                      </label>
-
-                      <label for="planoSaudeNao">
-                          Não
-                          <input type="radio" id="planoSaudeNao" name="planoSaude" value="Não" required>
-                      </label>
-
-                  </div>
-
-                  <div class="form-group">
-                      <label>Coparticipativo:</label>
-                      <div class="radio-options">
-                          <label for="coparticipativoSim">
-                              Sim
-                              <input type="radio" id="coparticipativoSim" name="coparticipativo" value="Sim" required>
-                          </label>
-
-                      </div>
-                      <div class="radio-options">
-                          <label for="coparticipativoNao">
-                              Não
-                              <input type="radio" id="coparticipativoNao" name="coparticipativo" value="Não" required>
-                          </label>
-
-                      </div>
-                  </div>
-
-                  <div class="form-group">
-                      <label for="porcentagemPlanoSaude">Digite a %:</label>
-                      <input type="number" id="porcentagemPlanoSaude" name="porcentagemPlanoSaude">
-                  </div>
-              </div>
-          </fieldset>
-
+            <legend>Informações de Login</legend>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="usuario">Usuário:</label>
+                    <input [(ngModel)]="usuarioAdicionar" type="text"  id="usuario" name="usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input [(ngModel)]="senhaAdicionar" type="text" id="senha" name="senha" required>
+                </div>
+            </div>
+        </fieldset>
               <button class="btn-cadastro-func" type="reset">Limpar dados</button>
-              <button class="btn-cadastro-func" type="submit">Cadastrar</button>
-
+              <button class="btn-cadastro-func" type="submit" (click)="CadastrarFuncionario()">Cadastrar</button>
           </form>
       </main>
   </mat-sidenav-content>

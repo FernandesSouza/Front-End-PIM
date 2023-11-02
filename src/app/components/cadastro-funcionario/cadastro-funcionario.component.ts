@@ -6,6 +6,8 @@ import {BreakpointObserver} from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material/sidenav';
 
 
+
+
 @Component({
   selector: 'app-cadastro-funcionario',
   templateUrl: './cadastro-funcionario.component.html',
@@ -19,19 +21,23 @@ export class CadastroFuncionarioComponent implements OnInit {
 
   ngAfterViewInit(){
     this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
-      if(res.matches){
-        this.sidenav.mode = 'over';
-        this.sidenav.close();
-      }else{
-        this.sidenav.mode = 'side';
-        this.sidenav.open();
+      if (this.sidenav) {
+        if(res.matches){
+          this.sidenav.mode = 'over';
+          this.sidenav.close();
+        } else {
+          this.sidenav.mode = 'side';
+          this.sidenav.open();
+        }
       }
-    })
+    });
+
+
   }
 
   imagePath = 'assets/imagens/logo_sargitariorh_preto.svg';
 
-  constructor(private cadastroService: CadastroService, private datePipe: DatePipe, private observer: BreakpointObserver) {}
+  constructor(private cadastroService: CadastroService, private datePipe: DatePipe, private observer: BreakpointObserver ) {}
 
 matriculaAdicionar = 0;
 idempresaAdicionar = null;
@@ -54,19 +60,31 @@ plsaudeAdicionar = null;
 transporteAdicionar = null;
 senhaAdicionar = '';
 setorAdicionar = '';
-dataAdmissao = ''
+dataAdmissao = '';
 
 
 
-  ngOnInit(): void {
+ngOnInit(): void {
+  this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+    if (this.sidenav) {
+      if(res.matches){
+        this.sidenav.mode = 'over';
+        this.sidenav.close();
+      } else {
+        this.sidenav.mode = 'side';
+        this.sidenav.open();
+      }
+    }
+  });
 
-   this.CadastrarFuncionario();
-  }
+  this.CadastrarFuncionario();
+}
 
   CadastrarFuncionario() {
 
-    const dataAdmissaoFormatada = this.dataAdmissao ? this.datePipe.transform(this.dataAdmissao, 'yyyy-MM-dd') : null;
-    dataAdmissao: Date
+
+    const dataAdmissaoFormatada = this.datePipe.transform(this.dataAdmissao, 'yyyy-MM-dd');
+
     const novoFuncionario: FuncionarioModel = {
       matricula: this.matriculaAdicionar,
       idempresa: this.idempresaAdicionar,
@@ -92,7 +110,6 @@ dataAdmissao = ''
 
       dataAdmissao: dataAdmissaoFormatada ? new Date(dataAdmissaoFormatada) : new Date()
 
-
     };
 
     this.cadastroService.cadastrarFuncionario(novoFuncionario).subscribe(
@@ -103,6 +120,7 @@ dataAdmissao = ''
       },
       erro => {
         console.error('Erro ao cadastrar:', erro);
+
 
 
         if (erro.error instanceof ErrorEvent) {
