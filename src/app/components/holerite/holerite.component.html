@@ -25,16 +25,44 @@
       </button>
     </mat-sidenav>
     <mat-sidenav-content>
-      
-    <div class="form-row">
+    <nav>
+        <button class="toolbar-menu-btn" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <span *ngIf="!sidenav.opened" class="icon"><i class="bi bi-list"></i></span>
+        </button>
+    </nav>
+
+    <main>
       <div class="form-group">
         <form>
-          <h1 style="text-align: center;">CONSULTA DE HOLERITES</h1>
+          <h1 style="text-align: center;">Consulta de Holerites</h1>
           <div class="inputs">
             <input type="search" [(ngModel)]="data"  name="data" id="" placeholder="ANO/MÊS/DIA">
-            <button (click)="ObterHoleriteUnico()">PESQUISAR</button>
+            <button class="bnt-submit-padrao" (click)="ObterHoleriteUnico()">PESQUISAR</button>
           </div>
+
             <div class="container">
+
+              <!--
+                versão em labels
+              -->
+              <div class="content-holerite" *ngIf="holerite$ | async as holerite">
+                <p><strong>ID:</strong> {{ holerite.id }}</p>
+                <p><strong>ID da Empresa:</strong> {{ holerite.idempresa }}</p>
+                <p><strong>CPF:</strong> {{ holerite.cpf }}</p>
+                <p><strong>Matrícula do Funcionário:</strong> {{ holerite.matfuncionario }}</p>
+                <p><strong>Data de Pagamento:</strong> {{ holerite.datapgto | date:'yy/MM/dd' }}</p>
+                <p><strong>Valor:</strong> {{ holerite.valor | currency:'BRL' }}</p>
+                <p><strong>Nome:</strong> {{ holerite.nome }}</p>
+                <p><strong>Função:</strong> {{ holerite.funcao }}</p>
+                <p><strong>Setor:</strong> {{ holerite.setor }}</p>
+              </div>
+              
+
+              <!--
+                Tabela
+
+              -->
+              <!--
               <table>
                 <thead>
                   <tr>
@@ -63,10 +91,14 @@
                   </tr>
                 </tbody>
               </table>
+
+              -->
+
             </div>
           </form>
       </div>
-    </div>
+
+    </main>
 
   </mat-sidenav-content>
 </mat-sidenav-container>
