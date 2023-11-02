@@ -1,9 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Holerite } from 'src/app/Models/Holerite';
 import { HoleriteService } from 'src/app/service/holeriteService';
 import { BehaviorSubject } from 'rxjs';
+import {BreakpointObserver} from '@angular/cdk/layout';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-holerite',
@@ -12,6 +14,27 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class HoleriteComponent implements OnInit {
 
+  @ViewChild(MatSidenav) sidenav!: MatSidenav;
+  
+  constructor(private holeriteService: HoleriteService, private observer: BreakpointObserver){
+
+  }
+
+
+  ngAfterViewInit(){
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+      if(res.matches){
+        this.sidenav.mode = 'over';
+        this.sidenav.close();
+      }else{
+        this.sidenav.mode = 'side';
+        this.sidenav.open();
+      }
+    })
+  }
+
+
+  imagePath = 'assets/imagens/logo_sargitariorh_preto.svg';
 
 
 
@@ -20,11 +43,7 @@ export class HoleriteComponent implements OnInit {
 
   data: string =''
 
-constructor(private holeriteService: HoleriteService){
 
-
-
-}
 
   ngOnInit(): void {
 

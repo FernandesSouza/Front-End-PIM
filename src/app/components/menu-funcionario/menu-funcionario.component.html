@@ -1,19 +1,26 @@
-<nav>
-  <div class="logo">
-    <h1>SargitarioRH</h1>
-    <p>Funcionario</p>
-  </div>
-  <ul class="menu">
-    <li>
-      <a routerLink="/holerite" id="links">Holerite</a>
-    </li>
-    <li>
-     <a routerLink="/" id="links">Sair do sistema</a>
-    </li>
-  </ul>
-</nav>
-<main>
-  <div>
-    <img [src]="imagePath" alt="Minha Imagem">
-  </div>
-</main>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav">
+      <button class="sidenav-menu-btn" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+          <span *ngIf="sidenav.opened" class="icon"><i class="bi bi-x-lg"></i></span>
+      </button>
+      <span>
+          <img class="logo" [src]="imagePath" alt="Minha Imagem">
+          <p>Funcionário</p>
+      </span>
+
+      <button  routerLink="/menu-funcionario" class="sidenav-menu-btn">
+          <span class="icon"><i class="bi bi-house-door-fill"></i></span>
+          <span class="txt-link">Home</span>
+      </button>
+
+      <button routerLink="/holerite" class="sidenav-menu-btn">
+          <span class="icon"><i class="bi bi-people-fill"></i></span>
+          <span class="txt-link">Holerite</span>
+      </button>
+
+      <button routerLink="/" class="sidenav-menu-btn">
+          <span class="icon"><i class="bi bi-backspace-fill"></i></span>
+          <span class="txt-link">Sair</span>
+      </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
