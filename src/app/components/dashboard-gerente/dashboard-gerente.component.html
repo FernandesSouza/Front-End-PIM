@@ -1,0 +1,50 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+        <button class="sidenav-menu-btn" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <span *ngIf="sidenav.opened" class="icon"><i class="bi bi-x-lg"></i></span>
+        </button>
+        <span>
+            <img class="logo" [src]="imagePath" alt="Minha Imagem">
+            <p>Gerente</p>
+        </span>
+        
+        <button  routerLink="/menu-gerente" class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-house-door-fill"></i></span>
+            <span class="txt-link">Home</span>
+        </button>
+  
+        <button routerLink="/cadastro-funcionario" class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-person-fill-add"></i></span>
+            <span class="txt-link">Cadastro de Funcionários</span>
+        </button>
+  
+        <button class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-people-fill"></i></span>
+            <span class="txt-link">Consultar Funcionários</span>
+        </button>
+  
+        <button routerLink="/dashboard-gerente" class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-bar-chart-fill"></i></span>
+            <span class="txt-link">Dashboard</span>
+        </button>
+  
+        <button routerLink="/" class="sidenav-menu-btn">
+            <span class="icon"><i class="bi bi-backspace-fill"></i></span>
+            <span class="txt-link">Sair</span>
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <nav>
+            <button class="toolbar-menu-btn" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+                <span *ngIf="!sidenav.opened" class="icon"><i class="bi bi-list"></i></span>
+            </button>
+        </nav>
+        <main>
+  
+            <h1>Dashboard Gerencial</h1>
+            <p>Dashboard com todas as informações referente a análise de dados de Headcount e Folha de Pagamento da empresa.</p>
+  
+  
+        </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
