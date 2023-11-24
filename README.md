@@ -1,3 +1,8 @@
+
+ FRONT-END DO PROJETO API_PIM
+ QUE VOCÊ PODERÁ CONSULTAR NO MEU PERFIL !!
+
+
 # SagitarioRH
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.

@@ -26,6 +26,7 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { MenuGerenteComponent } from './components/menu-gerente/menu-gerente.component';
 import { CadastroFuncionarioComponent } from './components/cadastro-funcionario/cadastro-funcionario.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardGerenteComponent } from './components/dashboard-gerente/dashboard-gerente.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HoleriteComponent,
     MenuGerenteComponent,
     CadastroFuncionarioComponent,
+    DashboardGerenteComponent,
 
   ],
   imports: [
