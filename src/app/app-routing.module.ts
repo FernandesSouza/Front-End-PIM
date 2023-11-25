@@ -5,6 +5,7 @@ import { MenuFuncionarioComponent } from "./components/menu-funcionario/menu-fun
 import { HoleriteComponent } from "./components/holerite/holerite.component";
 import { MenuGerenteComponent } from "./components/menu-gerente/menu-gerente.component";
 import { CadastroFuncionarioComponent } from "./components/cadastro-funcionario/cadastro-funcionario.component";
+import { DashboardGerenteComponent } from "./components/dashboard-gerente/dashboard-gerente.component";
 
 
 const routes: Routes = [
@@ -13,8 +14,8 @@ const routes: Routes = [
   {path: 'menu-funcionario',component: MenuFuncionarioComponent},
   {path: 'holerite', component: HoleriteComponent},
   {path: 'menu-gerente', component: MenuGerenteComponent},
-  {path: 'cadastro-funcionario', component: CadastroFuncionarioComponent}
-  
+  {path: 'cadastro-funcionario', component: CadastroFuncionarioComponent},
+  {path: 'dashboard-gerente', component: DashboardGerenteComponent},
 
 ]
 
