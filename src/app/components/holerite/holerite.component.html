@@ -41,10 +41,6 @@
           </div>
 
             <div class="container">
-
-              <!--
-                versão em labels
-              -->
               <div class="content-holerite" *ngIf="holerite$ | async as holerite">
                 <p><strong>ID:</strong> {{ holerite.id }}</p>
                 <p><strong>ID da Empresa:</strong> {{ holerite.idempresa }}</p>
@@ -56,43 +52,7 @@
                 <p><strong>Função:</strong> {{ holerite.funcao }}</p>
                 <p><strong>Setor:</strong> {{ holerite.setor }}</p>
               </div>
-              
-
-              <!--
-                Tabela
-
-              -->
-              <!--
-              <table>
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Empresa</th>
-                    <th>Cpf</th>
-                    <th>Matrícula do Funcionário</th>
-                    <th>Data de Pagamento</th>
-                    <th>Valor</th>
-                    <th>Nome</th>
-                    <th>Função</th>
-                    <th>Setor</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngIf="holerite$ | async as holerite">
-                    <td>{{ holerite.id }}</td>
-                    <td>{{ holerite.idempresa }}</td>
-                    <td>{{ holerite.cpf }}</td>
-                    <td>{{ holerite.matfuncionario }}</td>
-                    <td>{{ holerite.datapgto | date:'yy/MM/dd' }}</td>
-                    <td>{{ holerite.valor | currency:'BRL' }}</td>
-                    <td>{{ holerite.nome }}</td>
-                    <td>{{ holerite.funcao }}</td>
-                    <td>{{ holerite.setor }}</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              -->
+            
 
             </div>
           </form>
