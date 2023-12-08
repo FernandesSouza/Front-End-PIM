@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SiopEmprapa.Infra.Ioc/1.0.0": {
+        "dependencies": {
+          "SiopEmbrapa.Aplication": "1.0.0",
+          "SiopEmbrapa.Domain": "1.0.0",
+          "SiopEmbrapa.Infra.Data": "1.0.0"
+        },
+        "runtime": {
+          "SiopEmprapa.Infra.Ioc.dll": {}
+        }
+      },
+      "SiopEmbrapa.Aplication/1.0.0": {
+        "dependencies": {
+          "SiopEmbrapa.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SiopEmbrapa.Aplication.dll": {}
+        }
+      },
+      "SiopEmbrapa.Domain/1.0.0": {
+        "runtime": {
+          "SiopEmbrapa.Domain.dll": {}
+        }
+      },
+      "SiopEmbrapa.Infra.Data/1.0.0": {
+        "dependencies": {
+          "SiopEmbrapa.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SiopEmbrapa.Infra.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SiopEmprapa.Infra.Ioc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SiopEmbrapa.Aplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SiopEmbrapa.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SiopEmbrapa.Infra.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

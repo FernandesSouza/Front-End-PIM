@@ -1,0 +1,266 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmprapa.Infra.Ioc\\SiopEmprapa.Infra.Ioc.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Aplication\\SiopEmbrapa.Aplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Aplication\\SiopEmbrapa.Aplication.csproj",
+        "projectName": "SiopEmbrapa.Aplication",
+        "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Aplication\\SiopEmbrapa.Aplication.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj": {
+                "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj",
+        "projectName": "SiopEmbrapa.Domain",
+        "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Infra.Data\\SiopEmbrapa.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Infra.Data\\SiopEmbrapa.Infra.Data.csproj",
+        "projectName": "SiopEmbrapa.Infra.Data",
+        "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Infra.Data\\SiopEmbrapa.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj": {
+                "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmprapa.Infra.Ioc\\SiopEmprapa.Infra.Ioc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmprapa.Infra.Ioc\\SiopEmprapa.Infra.Ioc.csproj",
+        "projectName": "SiopEmprapa.Infra.Ioc",
+        "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmprapa.Infra.Ioc\\SiopEmprapa.Infra.Ioc.csproj",
+        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmprapa.Infra.Ioc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Aplication\\SiopEmbrapa.Aplication.csproj": {
+                "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Aplication\\SiopEmbrapa.Aplication.csproj"
+              },
+              "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj": {
+                "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Domain\\SiopEmbrapa.Domain.csproj"
+              },
+              "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Infra.Data\\SiopEmbrapa.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Igor\\Desktop\\ProjetoEmbrapa\\SiopEmbrapa.Infra.Data\\SiopEmbrapa.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

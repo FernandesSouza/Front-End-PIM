@@ -1,0 +1,15 @@
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\bin\Debug\net8.0\SiopEmbrapa.Infra.Data.deps.json
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\bin\Debug\net8.0\SiopEmbrapa.Infra.Data.dll
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\bin\Debug\net8.0\SiopEmbrapa.Infra.Data.pdb
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\bin\Debug\net8.0\SiopEmbrapa.Domain.dll
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\bin\Debug\net8.0\SiopEmbrapa.Domain.pdb
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.AssemblyInfo.cs
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.csproj.CopyComplete
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.dll
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\refint\SiopEmbrapa.Infra.Data.dll
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\SiopEmbrapa.Infra.Data.pdb
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Infra.Data\obj\Debug\net8.0\ref\SiopEmbrapa.Infra.Data.dll

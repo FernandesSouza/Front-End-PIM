@@ -1,0 +1,11 @@
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\bin\Debug\net8.0\SiopEmbrapa.Domain.deps.json
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\bin\Debug\net8.0\SiopEmbrapa.Domain.dll
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\bin\Debug\net8.0\SiopEmbrapa.Domain.pdb
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\SiopEmbrapa.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\SiopEmbrapa.Domain.AssemblyInfoInputs.cache
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\SiopEmbrapa.Domain.AssemblyInfo.cs
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\SiopEmbrapa.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\SiopEmbrapa.Domain.dll
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\refint\SiopEmbrapa.Domain.dll
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\SiopEmbrapa.Domain.pdb
+C:\Users\Igor\Desktop\ProjetoEmbrapa\SiopEmbrapa.Domain\obj\Debug\net8.0\ref\SiopEmbrapa.Domain.dll
